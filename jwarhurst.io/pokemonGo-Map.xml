@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>PokemonGo-Map</Name>
+  <Repository>ashex/pokemongo-map</Repository>
+  <Registry>https://hub.docker.com/r/ashex/pokemongo-map/</Registry>
+  <Network>bridge</Network>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Overview/>
+  <Category>Other:</Category>
+  <WebUI>http://[IP]:[PORT:5000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://github.com/AHAAAAAAA/PokemonGo-Map/blob/master/static/appicons/114x114.png</Icon>
+  <ExtraParams/>
+  <DateInstalled>1470169874</DateInstalled>
+  <Description/>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>5000</HostPort>
+        <ContainerPort>5000</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data/>
+  <Config Name="POKEMON_AUTH_SERVICE" Target="POKEMON_AUTH_SERVICE" Default="ptc" Mode="" Description="Auth Services, either one for all accounts or one per&#13;&#10;account. ptc or google. Defaults all to ptc." Type="Variable" Display="always" Required="true" Mask="false">ptc</Config>
+  <Config Name="POKEMON_USERNAME" Target="POKEMON_USERNAME" Default="" Mode="" Description="Usernames, one per account." Type="Variable" Display="always" Required="true" Mask="false">JimTheGreatOne</Config>
+  <Config Name="POKEMON_PASSWORD" Target="POKEMON_PASSWORD" Default="" Mode="" Description="Passwords, either single one for all accounts or one per account." Type="Variable" Display="always" Required="true" Mask="true">pokemonfever</Config>
+  <Config Name="POKEMON_LOCATION" Target="POKEMON_LOCATION" Default="Disneyland, CA" Mode="" Description="Location, can be an address or coordinates" Type="Variable" Display="always" Required="true" Mask="false">219 Sklar St, Ladera Ranch, CA</Config>
+  <Config Name="POKEMON_STEP_LIMIT" Target="POKEMON_STEP_LIMIT" Default="5" Mode="" Description="Steps" Type="Variable" Display="always" Required="true" Mask="false">5</Config>
+  <Config Name="POKEMON_GMAPS_KEY" Target="POKEMON_GMAPS_KEY" Default="AIzaSyC4FsnYJS8lP4q_kvHGH-0wWS7KgA5O8Nk" Mode="" Description="Google Maps Javascript API Key" Type="Variable" Display="always" Required="true" Mask="false">AIzaSyC4FsnYJS8lP4q_kvHGH-0wWS7KgA5O8Nk</Config>
+  <Config Name="Host Port 1" Target="5000" Default="5000" Mode="tcp" Description="Container Port: 5000" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+</Container>
